@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepanshu Verma</title>
+    <link rel="icon" href="./icon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const darkModeIcon = document.getElementById('dark-mode-icon');
+            const profilePicture = document.querySelector('.profile-picture');
+
+            // Check if dark mode is already set in localStorage
+            if (localStorage.getItem('dark-mode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                darkModeIcon.classList.remove('fa-moon');
+                darkModeIcon.classList.add('fa-sun');
+                profilePicture.src = './img-N.png';
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+
+                if (document.body.classList.contains('dark-mode')) {
+                    localStorage.setItem('dark-mode', 'enabled');
+                    darkModeIcon.classList.remove('fa-moon');
+                    darkModeIcon.classList.add('fa-sun');
+                    profilePicture.src = './img-N.png';
+                } else {
+                    localStorage.setItem('dark-mode', 'disabled');
+                    darkModeIcon.classList.remove('fa-sun');
+                    darkModeIcon.classList.add('fa-moon');
+                    profilePicture.src = './img-D.png';
+                }
+            });
+        });
+    </script>
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-dark navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1>Deepanshu Verma |</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button id="dark-mode-toggle" class="btn btn-outline-primary ms-3">
+                    <i class="fas fa-moon" id="dark-mode-icon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Software Engineer | Hardworking | Positive Thinker</p>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col col-lg-4">
+            <!-- Profile Picture Section -->
+            <section id="profile" class="section profile">
+                <div class="container">
+                    <h2>Profile Picture</h2>
+                    <img src="./img.png" alt="Deepanshu Verma" class="profile-picture" />
+                </div>
+            </section>
+            <!-- Contact Section -->
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Email: <a href="mailto:vermadeepanshu201@gmail.com">vermadeepanshu201@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/deepanshu1531" target="_blank"
+                            rel="noopener noreferrer">github.com/deepanshu1531</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/deepanshu-verma-299405195" target="_blank"
+                            rel="noopener noreferrer">linkedin.com/in/deepanshu-verma</a></p>
+                    <p>Mobile No: <a href="">+91-9131283011</a></p>
+                </div>
+            </section>
+        </div>
+        <div class="col">
+            <!-- About Section -->
+            <section id="about" class="section about">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a passionate Full Stack Developer with expertise in Java, Spring Boot, React JS, and
+                        MongoDB. I
+                        am focused on building efficient and scalable solutions. I thrive on learning and applying new
+                        technologies to solve complex problems, while continuously enhancing my skills. I am seeking a
+                        challenging role in an organization where I can utilize my technical and management skills to
+                        contribute
+                        to the organization's growth and expand my knowledge of emerging trends in the IT sector.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section skills">
+                <div class="container">
+                    <h2>Technologies & Tools</h2>
+                    <h4>Languages</h4>
+                    <div class="skills-grid">
+                        <span>Java (core + advance)</span>
+                        <span>JavaScript (React, Node)</span>
+                        <span>SQL</span>
+                        <span>MongoDB</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <h4>Frameworks</h4>
+                    <div class="skills-grid">
+                        <span>Spring Boot</span>
+                        <span>Spring MVC</span>
+                    </div>
+                    <h4>Tools & Platforms</h4>
+                    <div class="skills-grid">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>MySQL Workbench</span>
+                        <span>Eclipse</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                    </div>
+                    <h4>Frontend</h4>
+                    <div class="skills-grid">
+                        <span>React JS</span>
+                        <span>JSP</span>
+                        <span>HTML</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <h4>Backend</h4>
+                    <div class="skills-grid">
+                        <span>Java Servlet</span>
+                        <span>Spring Boot</span>
+                    </div>
+                    <h4>Databases</h4>
+                    <div class="skills-grid">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section projects">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <h3>GIA - Spectrum Application (Fullstack developer)
+                                TCS Client Project - GIA</h3>
+                            <p>Technologies - Java, JSP, Spring boot, SQL.
+                                Software - Eclipse, MySql Workbench</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Citi Bank - CSC Api (Backend Developer)
+                                Wipro Client Project - Citi bank</h3>
+                            <p>Technologies - Java, Spring boot, SQL.
+                                Software - Eclipse, MySql Workbench</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Citi Bank - Mainframe Project (L1 - Support)
+                                Wipro Client Project - Citi bank</h3>
+                            <p>Technologies - Mainframe.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Issue tracking application
+                                Wipro - FED training capstone project</h3>
+                            <p>Technologies - React js, JSON Server.
+                                Software - STS.
+                                The purpose of this system is to view the list of issues and allow only registered and
+                                authenticated users to add, edit,
+                                delete the issues and view the issue details.
+                                The user interface of this system is implemented in React JS .
+                                The data about the issue is managed by the JSON server.
+                                The client application interface with the JSON server through http to retrieve and store
+                                data</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Image Slider
+                                Wipro - Microsoft project</h3>
+                            <p>Technologies - React js.
+                                Software - VS code
+                                Image slider is a react application component which randomly choose the images from 1000
+                                image from internet on
+                                every refresh and display one by one on the image slider area.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Eisteddfod web application - School web application
+                                Personal project</h3>
+                            <p>Technologies - Node js, Hapi js, React js, MongoDB.
+                                Software - VS code, Postman.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Billbook
+                                Personal Project
+                            </h3>
+                            <p>Technologies - Google Apps Script , React Js.
+                                Software - VS code, Postman
+                                Project is implemented in Google Apps Script for the backend and Google sheet is used
+                                for data storage, React Js for
+                                the frontend.
+                                Billbook is a REST Web app, the aim of this application is to manage the customer and
+                                sales details of a jewellery
+                                shop.
+                            </p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Friday AI - Chatbot
+                                Personal project</h3>
+                            <p>Technologies - React js, Java, Sprintboot, MongoDB.
+                                Software - STS, VS code, Postman.
+                                Friday AI chatbot is a chat application implemented in Java Spring boot for the backend,
+                                React JS for the frontend and
+                                mongo Db for data storage and OpenAi API. App takes the input in text or in voice
+                                command and givers the most
+                                relevant output in the form of text or image.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>RTCT - Real time collaboration tool
+                                Personal project</h3>
+                            <p>Technologies - React js, Java, Sprintboot, MongoDB.
+                                Software - STS, VS code, Postman.
+                                Your Real-Time Collaboration Tool (RTCT) project is a Java-based application designed to
+                                facilitate remote team collaboration. It includes features for real-time task tracking,
+                                file sharing, and communication, integrating technologies like Spring Boot, WebSockets,
+                                React js, and MongoDB. The application allows team members to stay connected, manage
+                                tasks
+                                efficiently, and share files seamlessly, offering an enhanced remote work experience.
+                                The project leverages modern web technologies and real-time communication to foster
+                                productivity and collaboration in distributed teams.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Project on employee details management.
+                                Personal project
+                            </h3>
+                            <p>Technologies - React js, Java, Sprintboot, MongoDB.
+                                Software - STS, VS code, Postman.
+                                Project is implemented in Spring Boot for backend, and React JS for the frontend and
+                                data is stored in MongoDB.
+                                Its a Single page application on REST API.
+                                Application perform basic CRUD operation for employees details.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>College management system.
+                                Personal project
+                            </h3>
+                            <p>Technologies - Java, Servlet, JSP.
+                                Software - STS, MySql workbench
+                                Project is implemented on servlet for backend, jsp for frontend and mySql for the
+                                database.
+                                In the application Students can access their academic related details and teachers can
+                                access job related details.
+                                Admin will have the access to create or delete accounts. Admin panel can be accessed
+                                only using the url.
+                                To make the application secure session management is implemented on every request from
+                                the user, after logout back
+                                button is disabled.
+                                Bootstrap classes are used to make the frontend attractive</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Multiplex System REST application
+                                Personal project
+                            </h3>
+                            <p>Technologies - MongoDb, Express Js, React Js, Node Js.
+                                Software - VS code, Postman
+                                Project is implemented in Express Js for the backend, React Js for the frontend and
+                                MongoDB is used for the
+                                database, in the Node Js environment.
+                                Its a Single page application on REST API.
+                                This project provides the movie related information to the users and on the basis of
+                                availability users can book movie.
+                                After booking movie details availability and customer booking is updated.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section experience">
+                <div class="container">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li>
+                            <h3>TATA Consultancy Services</h3>
+                            <!-- <p>System Engineer (26 Oct 2022 - 28 Apr 2023)</p> -->
+                            <p>System Engineer (26 Oct 2022 - current)</p>
+                        </li>
+                        <li>
+                            <h3>Wipro Technologies Pvt Ltd</h3>
+                            <p>Project Engineer (30 Nov 2020 - 23 Oct 2022)</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section education">
+                <div class="container">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>
+                            <h3>Bachelor of Engineering (CSE)</h3>
+                            <p>Global Nature Care Sangathan’s Group of Institutions, Jabalpur | 7.27 CGPA</p>
+                        </li>
+                        <li>
+                            <h3>12th Grade</h3>
+                            <p>Symbiosis Hr. Sec School | 62.4%</p>
+                        </li>
+                        <li>
+                            <h3>10th Grade</h3>
+                            <p>St. Xavier's High School | 61.4%</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="language" class="section language">
+                <div class="container">
+                    <h2>Languages</h2>
+                    <p>English, Hindi</p>
+                </div>
+            </section>
+
+            <section id="interest" class="section interest">
+                <div class="container">
+                    <h2>Interests</h2>
+                    <p>Drawing</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Deepanshu Verma</p>
+        </div>
+    </footer>
+</body>
+
+</html>
