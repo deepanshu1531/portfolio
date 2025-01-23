@@ -125,6 +125,10 @@ ul {
     color: var(--primary-color);
 }
 
+.section h3 {
+    color: var(--primary-color);
+}
+
 /* Profile Picture */
 .profile-picture {
     display: block;
@@ -294,7 +298,14 @@ body.dark-mode .section {
 
 body.dark-mode .section h2 {
     color: #00aaff;
-    /* Heading color */
+}
+
+body.dark-mode .section h4 {
+    color: rgb(252, 251, 194);
+}
+
+body.dark-mode .section h3 {
+    color: rgb(252, 251, 194);
 }
 
 body.dark-mode .project-card {
