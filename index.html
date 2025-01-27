@@ -21,6 +21,26 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script>
+
+        document.addEventListener("contextmenu", (event) => event.preventDefault());
+
+        let devtoolsOpened = false;
+
+        function detectDevTools() {
+            const threshold = 160;
+            const isOpen =
+                window.outerWidth - window.innerWidth > threshold ||
+                window.outerHeight - window.innerHeight > threshold;
+
+            if (isOpen && !devtoolsOpened) {
+                devtoolsOpened = true;
+                document.body.innerHTML =
+                    "<h1>Access Restricted</h1><p>Please close developer tools to continue.</p>";
+            }
+        }
+
+        setInterval(detectDevTools, 1000);
+
         document.addEventListener('DOMContentLoaded', () => {
             const darkModeToggle = document.getElementById('dark-mode-toggle');
             const darkModeIcon = document.getElementById('dark-mode-icon');
@@ -54,7 +74,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar bg-dark navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="">
                 <h1>Deepanshu Verma |</h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -106,7 +126,7 @@
             <section id="profile" class="section profile">
                 <div class="container">
                     <h2>Profile Picture</h2>
-                    <img src="./img.png" alt="Deepanshu Verma" class="profile-picture" />
+                    <img src="./img-D.png" alt="Deepanshu Verma" class="profile-picture" />
                 </div>
             </section>
             <!-- Contact Section -->
@@ -214,17 +234,20 @@
                             <p>Technologies - Java, JSP, Spring boot, SQL.
                                 Software - Eclipse, MySql Workbench</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Citi Bank - CSC Api (Backend Developer)
                                 Wipro Client Project - Citi bank</h3>
                             <p>Technologies - Java, Spring boot, SQL.
                                 Software - Eclipse, MySql Workbench</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Citi Bank - Mainframe Project (L1 - Support)
                                 Wipro Client Project - Citi bank</h3>
                             <p>Technologies - Mainframe.</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Issue tracking application
                                 Wipro - FED training capstone project</h3>
@@ -238,6 +261,7 @@
                                 The client application interface with the JSON server through http to retrieve and store
                                 data</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Image Slider
                                 Wipro - Microsoft project</h3>
@@ -247,12 +271,14 @@
                                 image from internet on
                                 every refresh and display one by one on the image slider area.</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Eisteddfod web application - School web application
                                 Personal project</h3>
                             <p>Technologies - Node js, Hapi js, React js, MongoDB.
                                 Software - VS code, Postman.</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Billbook
                                 Personal Project
@@ -267,6 +293,7 @@
                                 shop.
                             </p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Friday AI - Chatbot
                                 Personal project</h3>
@@ -278,6 +305,7 @@
                                 command and givers the most
                                 relevant output in the form of text or image.</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>RTCT - Real time collaboration tool
                                 Personal project</h3>
@@ -292,6 +320,7 @@
                                 The project leverages modern web technologies and real-time communication to foster
                                 productivity and collaboration in distributed teams.</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Project on employee details management.
                                 Personal project
@@ -303,6 +332,7 @@
                                 Its a Single page application on REST API.
                                 Application perform basic CRUD operation for employees details.</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>College management system.
                                 Personal project
@@ -320,6 +350,7 @@
                                 button is disabled.
                                 Bootstrap classes are used to make the frontend attractive</p>
                         </div>
+                        <br />
                         <div class="project-card">
                             <h3>Multiplex System REST application
                                 Personal project
@@ -337,6 +368,8 @@
                     </div>
                 </div>
             </section>
+
+            <br />
 
             <!-- Experience Section -->
             <section id="experience" class="section experience">
