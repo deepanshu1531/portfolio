@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepanshu Verma</title>
     <link rel="icon" href="./icon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -66,19 +68,56 @@
         </div>
     </nav>
 
-    <section id="name" class="name-animation">
-        <div class="container">
-            <h1>Deepanshu Verma</h1>
-            <p>Full Stack Developer | Software Engineer</p>
+    <section id="name" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
         </div>
-        <div class="hero-text animate__animated animate__fadeInDown">
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary cta-button pulse-animate">Get In Touch</a>
-                <a href="#projects" class="btn btn-outline cta-button float-animate">View My Work</a>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge animate__animated animate__fadeInDown">
+                    <span>👋 Welcome to my portfolio</span>
+                </div>
+                <h1 class="hero-title animate__animated animate__fadeInUp">
+                    Hi, I'm <span class="gradient-text">Deepanshu Verma</span>
+                </h1>
+                <p class="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                    Full Stack Developer crafting digital experiences with
+                    <br><span class="typing-text"></span>
+                </p>
+                <div class="hero-stats animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="4">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+                <div class="hero-cta animate__animated animate__fadeInUp animate__delay-3s">
+                    <a href="#contact" class="btn btn-primary cta-button pulse-animate">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-outline cta-button float-animate">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                    <a href="./MyResume.pdf" target="_blank" download class="btn btn-secondary cta-button"
+                        onclick="event.stopPropagation();">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="hero-scroll animate__animated animate__fadeInUp">
-            <span>Scroll Down</span>
+        <div class="hero-scroll animate__animated animate__fadeInUp animate__delay-4s">
+            <span>Scroll to explore</span>
             <div class="scroll-icon"></div>
         </div>
         <div class="hero-pattern"></div>
@@ -149,7 +188,7 @@
                         <iframe src="./MyResume.pdf" width="100%" height="500px">
                             Your browser does not support iframes.
                         </iframe>
-                        <a href="./MyResume.pdf" download class="btn btn-download">
+                        <a href="./MyResume.pdf" target="_blank" download class="btn btn-download">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
@@ -170,20 +209,29 @@
                             technologies to solve complex problems while continuously enhancing my skills.
                         </p>
                         <div class="about-highlights">
-                            <div class="highlight-card">
-                                <i class="fas fa-laptop-code"></i>
+                            <div class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
                                 <h3>Full Stack Development</h3>
-                                <p>Building end-to-end solutions with modern technologies</p>
+                                <p>Building end-to-end solutions with modern technologies and best practices</p>
+                                <div class="highlight-number">01</div>
                             </div>
-                            <div class="highlight-card">
-                                <i class="fas fa-lightbulb"></i>
+                            <div class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
                                 <h3>Problem Solving</h3>
-                                <p>Creative solutions to complex technical challenges</p>
+                                <p>Creative solutions to complex technical challenges with innovative approaches</p>
+                                <div class="highlight-number">02</div>
                             </div>
-                            <div class="highlight-card">
-                                <i class="fas fa-rocket"></i>
+                            <div class="highlight-card" data-aos="fade-up" data-aos-delay="300">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
                                 <h3>Continuous Learning</h3>
-                                <p>Always expanding my skill set with emerging technologies</p>
+                                <p>Always expanding my skill set with emerging technologies and industry trends</p>
+                                <div class="highlight-number">03</div>
                             </div>
                         </div>
                     </div>
@@ -305,160 +353,261 @@
                         <h2><i class="fas fa-project-diagram"></i> Projects</h2>
                     </div>
                     <div class="projects-container">
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3>GIA - Spectrum Application</h3>
-                                <span class="project-badge">Fullstack</span>
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="project-image">
                             </div>
-                            <p class="project-client">TCS Client Project - GIA</p>
-                            <p class="project-tech">Technologies: Java, JSP, Spring boot, SQL</p>
-                            <p class="project-desc">Developed a full-stack application for GIA with comprehensive
-                                features and robust architecture.</p>
-                            <div class="project-footer">
-                                <span class="project-date">2022</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3>Citi Bank - CSC Api</h3>
-                                <span class="project-badge">Backend</span>
-                            </div>
-                            <p class="project-client">Wipro Client Project - Citi bank</p>
-                            <p class="project-tech">Technologies: Java, Spring boot, SQL</p>
-                            <p class="project-desc">Backend development for Citi Bank's CSC API with secure data
-                                handling and efficient processing.</p>
-                            <div class="project-footer">
-                                <span class="project-date">2021</span>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3>Issue tracking application</h3>
-                                <span class="project-badge">Frontend</span>
-                            </div>
-                            <p class="project-client">>Wipro - FED training capstone project</p>
-                            <p class="project-tech">Technologies - React js, JSON Server.</p>
-                            <p class="project-tech">Software - VS Code.</p>
-                            <p class="project-desc"> purpose of this system is to view the list of issues and allow only
-                                registered and
-                                authenticated users to add, edit,
-                                delete the issues and view the issue details.
-                                The user interface of this system is implemented in React JS .
-                                The data about the issue is managed by the JSON server.
-                                The client application interface with the JSON server through http to retrieve and store
-                                data</p>
-                            <div class="project-footer">
-                                <span class="project-date">2020</span>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>GIA - Spectrum Application</h3>
+                                    <span class="project-badge fullstack">Fullstack</span>
+                                </div>
+                                <p class="project-client">TCS Client Project - GIA</p>
+                                <p class="project-desc">Developed a comprehensive full-stack application for GIA with
+                                    robust architecture, featuring advanced data processing and user management
+                                    capabilities.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">JSP</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">SQL</span>
+                                </div>
+                                <div class="project-footer">
+                                    <span class="project-date">
+                                        <i class="fas fa-calendar"></i>
+                                        2022
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="project-card">
-                            <div class="project-header">
-                                <h3>Image Slider</h3>
-                                <span class="project-badge">Frontend</span>
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="project-image">
                             </div>
-                            <p class="project-client">Wipro - Microsoft project</p>
-                            <p class="project-tech">Technologies - React js.</p>
-                            <p class="project-tech">
-                                Software - VS code</p>
-                            <p class="project-desc">
-                                Image slider is a react application component which randomly choose the images from 1000
-                                image from internet on
-                                every refresh and display one by one on the image slider area.</p>
-                            <div class="project-footer">
-                                <span class="project-date">2021</span>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Citi Bank - CSC Api</h3>
+                                    <span class="project-badge backend">Backend</span>
+                                </div>
+                                <p class="project-client">Wipro Client Project - Citi bank</p>
+                                <p class="project-desc">Backend development for Citi Bank's CSC API with secure data
+                                    handling, efficient processing, and robust architecture for financial transactions.
+                                </p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">SQL</span>
+                                    <span class="tech-tag">REST API</span>
+                                </div>
+                                <div class="project-footer">
+                                    <span class="project-date">
+                                        <i class="fas fa-calendar"></i>
+                                        2021
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Issue Tracking Application</h3>
+                                    <span class="project-badge frontend">Frontend</span>
+                                </div>
+                                <p class="project-client">Wipro - FED Training Capstone Project</p>
+                                <p class="project-desc">A comprehensive issue tracking system allowing authenticated
+                                    users to manage issues with full CRUD operations. Features user authentication,
+                                    real-time updates, and intuitive interface design.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">JSON Server</span>
+                                    <span class="tech-tag">REST API</span>
+                                    <span class="tech-tag">Authentication</span>
+                                </div>
+                                <div class="project-footer">
+                                    <span class="project-date">
+                                        <i class="fas fa-calendar"></i>
+                                        2020
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="project-image">
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Image Slider</h3>
+                                    <span class="project-badge frontend">Frontend</span>
+                                </div>
+                                <p class="project-client">Wipro - Microsoft Project</p>
+                                <p class="project-desc">A dynamic React application component that randomly selects and displays images from a collection of 1000+ internet images, featuring smooth transitions and responsive design.</p>
+                                <div class="project-tech-stack">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">API Integration</span>
+                                </div>
+                                <div class="project-footer">
+                                    <span class="project-date">
+                                        <i class="fas fa-calendar"></i>
+                                        2021
+                                    </span>
+                                </div>
                             </div>
                         </div>
 
                         <div class="project-more">
                             <button class="btn btn-outline" id="show-more-projects">Show More Projects</button>
                             <div class="more-projects" id="more-projects">
-                                <!-- Additional projects will be shown here -->
                                 <div class="project-card">
-                                    <div class="project-header">
-                                        <h3>Citi Bank - Mainframe Project (L1 - Support)</h3>
-                                        <span class="project-badge">Support</span>
+                                    <div class="project-image">
                                     </div>
-                                    <p class="project-client"></p>Wipro Client Project - Citi bank</p>
-                                    <p class="project-tech">Technologies - Mainframe.</p>
-                                    <div class="project-footer">
-                                        <span class="project-date">2021</span>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <h3>Citi Bank - Mainframe Project (L1 - Support)</h3>
+                                            <span class="project-badge support">Support</span>
+                                        </div>
+                                        <p class="project-client">Wipro Client Project - Citi Bank</p>
+                                        <p class="project-desc">Level 1 support for Citi Bank's mainframe systems, providing technical assistance and troubleshooting for critical banking operations.</p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-tag">Mainframe</span>
+                                            <span class="tech-tag">COBOL</span>
+                                            <span class="tech-tag">JCL</span>
+                                            <span class="tech-tag">Support</span>
+                                        </div>
+                                        <div class="project-footer">
+                                            <span class="project-date">
+                                                <i class="fas fa-calendar"></i>
+                                                2021
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <br />
+
                                 <div class="project-card">
-                                    <div class="project-header">
-                                        <h3>Friday AI - Chatbot</h3>
-                                        <span class="project-badge">Fullstack</span>
+                                    <div class="project-image">
                                     </div>
-                                    <p class="project-client">Personal project</p>
-                                    <p class="project-tech">Technologies: Next JS, Type Script, MongoDB</p>
-                                    <p class="project-desc">An intelligent chatbot application with 3D avatar interface,
-                                        natural
-                                        language processing, and voice interaction capabilities.</p>
-                                    <div class="project-footer">
-                                        <span class="project-date">2025</span>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <h3>Friday AI - Chatbot</h3>
+                                            <span class="project-badge fullstack">Fullstack</span>
+                                        </div>
+                                        <p class="project-client">Personal Project</p>
+                                        <p class="project-desc">An intelligent chatbot application with 3D avatar interface, natural language processing, and voice interaction capabilities for enhanced user experience.</p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-tag">Next.js</span>
+                                            <span class="tech-tag">TypeScript</span>
+                                            <span class="tech-tag">MongoDB</span>
+                                            <span class="tech-tag">AI/ML</span>
+                                        </div>
+                                        <div class="project-footer">
+                                            <span class="project-date">
+                                                <i class="fas fa-calendar"></i>
+                                                2025
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <br />
+
                                 <div class="project-card">
-                                    <div class="project-header">
-                                        <h3>RTCT - Real Time Collaboration Tool</h3>
-                                        <span class="project-badge">Fullstack</span>
+                                    <div class="project-image">
                                     </div>
-                                    <p class="project-client">Personal project</p>
-                                    <p class="project-tech">Technologies: React js, Java, Sprintboot, MongoDB</p>
-                                    <p class="project-desc">A real-time collaboration platform with task tracking, file
-                                        sharing,
-                                        and communication features for remote teams.</p>
-                                    <div class="project-footer">
-                                        <span class="project-date">2025</span>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <h3>RTCT - Real Time Collaboration Tool</h3>
+                                            <span class="project-badge fullstack">Fullstack</span>
+                                        </div>
+                                        <p class="project-client">Personal Project</p>
+                                        <p class="project-desc">A real-time collaboration platform with task tracking, file sharing, and communication features designed for remote teams and distributed workflows.</p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">Java</span>
+                                            <span class="tech-tag">Spring Boot</span>
+                                            <span class="tech-tag">MongoDB</span>
+                                        </div>
+                                        <div class="project-footer">
+                                            <span class="project-date">
+                                                <i class="fas fa-calendar"></i>
+                                                2025
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <br />
+
                                 <div class="project-card">
-                                    <div class="project-header">
-                                        <h3>Eisteddfod Web Application</h3>
-                                        <span class="project-badge">Fullstack</span>
+                                    <div class="project-image">
                                     </div>
-                                    <p class="project-client">Personal project</p>
-                                    <p class="project-tech">Technologies: Node js, Hapi js, React js, MongoDB</p>
-                                    <p class="project-desc">A comprehensive school web application with various modules
-                                        for administration, teachers, and students.</p>
-                                    <div class="project-footer">
-                                        <span class="project-date">2023</span>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <h3>Eisteddfod Web Application</h3>
+                                            <span class="project-badge fullstack">Fullstack</span>
+                                        </div>
+                                        <p class="project-client">Personal Project</p>
+                                        <p class="project-desc">A comprehensive school web application with various modules for administration, teachers, and students, featuring grade management and communication tools.</p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-tag">Node.js</span>
+                                            <span class="tech-tag">Hapi.js</span>
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">MongoDB</span>
+                                        </div>
+                                        <div class="project-footer">
+                                            <span class="project-date">
+                                                <i class="fas fa-calendar"></i>
+                                                2023
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <br />
                                 <div class="project-card">
-                                    <div class="project-header">
-                                        <h3>Billbook</h3>
-                                        <span class="project-badge">Fullstack</span>
+                                    <div class="project-image">
                                     </div>
-                                    <p class="project-client">Personal Project</p>
-                                    <p class="project-tech">Technologies: Google Apps Script, React Js</p>
-                                    <p class="project-desc">A REST Web app for managing customer and sales details of a
-                                        jewellery shop with Google Sheets as database.</p>
-                                    <div class="project-footer">
-                                        <span class="project-date">2024</span>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <h3>Billbook</h3>
+                                            <span class="project-badge fullstack">Fullstack</span>
+                                        </div>
+                                        <p class="project-client">Personal Project</p>
+                                        <p class="project-desc">A REST Web application for managing customer and sales details of a jewelry shop with Google Sheets as database, featuring inventory and billing management.</p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-tag">Google Apps Script</span>
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">Google Sheets API</span>
+                                            <span class="tech-tag">REST API</span>
+                                        </div>
+                                        <div class="project-footer">
+                                            <span class="project-date">
+                                                <i class="fas fa-calendar"></i>
+                                                2024
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                                <br />
+
                                 <div class="project-card">
-                                    <div class="project-header">
-                                        <h3>MyBrowser-Editor</h3>
-                                        <span class="project-badge">Frontend</span>
+                                    <div class="project-image">
                                     </div>
-                                    <p class="project-client">Personal project</p>
-                                    <p class="project-tech">Technologies: React js</p>
-                                    <p class="project-desc">A powerful React component designed for rich text and Java
-                                        code
-                                        editing, featuring Monaco Editor integration and various text styling,
-                                        formatting, theme toggling, and word/character count options.</p>
-                                    <div class="project-footer">
-                                        <span class="project-date">2024</span>
+                                    <div class="project-content">
+                                        <div class="project-header">
+                                            <h3>MyBrowser-Editor</h3>
+                                            <span class="project-badge frontend">Frontend</span>
+                                        </div>
+                                        <p class="project-client">Personal Project</p>
+                                        <p class="project-desc">A powerful React component designed for rich text and Java code editing, featuring Monaco Editor integration with syntax highlighting, theme toggling, and advanced formatting options.</p>
+                                        <div class="project-tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">Monaco Editor</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                            <span class="tech-tag">CSS3</span>
+                                        </div>
+                                        <div class="project-footer">
+                                            <span class="project-date">
+                                                <i class="fas fa-calendar"></i>
+                                                2024
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -635,8 +784,81 @@
             document.querySelector('.loader-wrapper').style.opacity = '0';
             setTimeout(() => {
                 document.querySelector('.loader-wrapper').style.display = 'none';
+                initializeAnimations();
             }, 500);
         });
+
+        // Initialize animations and effects
+        function initializeAnimations() {
+            // Typing animation
+            const typingText = document.querySelector('.typing-text');
+            const words = ['Java & Spring Boot', 'React & Next.js', 'MongoDB & SQL', 'Modern Web Technologies'];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function typeWriter() {
+                const currentWord = words[wordIndex];
+
+                if (isDeleting) {
+                    typingText.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingText.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentWord.length) {
+                    setTimeout(() => isDeleting = true, 2000);
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+
+                const speed = isDeleting ? 50 : 100;
+                setTimeout(typeWriter, speed);
+            }
+
+            if (typingText) typeWriter();
+
+            // Counter animation
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                let count = 0;
+                const increment = target / 100;
+
+                const updateCounter = () => {
+                    if (count < target) {
+                        count += increment;
+                        counter.textContent = Math.ceil(count);
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+
+                setTimeout(updateCounter, 1000);
+            });
+
+            // Particle animation
+            createParticles();
+        }
+
+        // Particle system
+        function createParticles() {
+            const particlesContainer = document.querySelector('.hero-particles');
+            if (!particlesContainer) return;
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
 
         // Dark mode toggle
         document.addEventListener('DOMContentLoaded', () => {
@@ -666,8 +888,39 @@
 
             if (showMoreBtn && moreProjects) {
                 showMoreBtn.addEventListener('click', () => {
-                    moreProjects.style.display = moreProjects.style.display === 'block' ? 'none' : 'block';
-                    showMoreBtn.textContent = moreProjects.style.display === 'block' ? 'Show Less' : 'Show More Projects';
+                    const isVisible = moreProjects.classList.contains('show');
+                    
+                    if (isVisible) {
+                        // Hide projects
+                        moreProjects.classList.remove('show');
+                        showMoreBtn.textContent = 'Show More Projects';
+                        
+                        // Scroll to projects section
+                        setTimeout(() => {
+                            document.getElementById('projects').scrollIntoView({ 
+                                behavior: 'smooth', 
+                                block: 'start' 
+                            });
+                        }, 300);
+                    } else {
+                        // Show projects
+                        moreProjects.classList.add('show');
+                        showMoreBtn.textContent = 'Show Less Projects';
+                        
+                        // Trigger staggered animations
+                        const projectCards = moreProjects.querySelectorAll('.project-card');
+                        projectCards.forEach((card, index) => {
+                            card.style.animationDelay = `${(index + 1) * 0.1}s`;
+                        });
+                        
+                        // Smooth scroll to show the new projects
+                        setTimeout(() => {
+                            moreProjects.scrollIntoView({ 
+                                behavior: 'smooth', 
+                                block: 'start' 
+                            });
+                        }, 100);
+                    }
                 });
             }
 
@@ -701,7 +954,7 @@
                 });
             });
 
-            // Animation on scroll
+            // Enhanced scroll animations
             const animateElements = document.querySelectorAll('.animate__animated');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -717,6 +970,56 @@
                     'animate__fadeInLeft' : element.classList.contains('animate__fadeInRight') ?
                         'animate__fadeInRight' : 'animate__fadeInUp';
                 observer.observe(element);
+            });
+
+            // Skill bar animations
+            const skillBars = document.querySelectorAll('.skill-progress');
+            const skillObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const width = entry.target.style.width;
+                        entry.target.style.width = '0%';
+                        setTimeout(() => {
+                            entry.target.style.width = width;
+                        }, 200);
+                        skillObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            skillBars.forEach(bar => {
+                skillObserver.observe(bar);
+            });
+
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth reveal animations for cards
+            const cards = document.querySelectorAll('.project-card, .highlight-card, .timeline-content');
+            const cardObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.style.opacity = '1';
+                            entry.target.style.transform = 'translateY(0)';
+                        }, index * 100);
+                        cardObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                cardObserver.observe(card);
             });
 
             // CTA button animations
